@@ -16,7 +16,7 @@ export default {
   name: 'application-2',
   router,
   mounted() {
-    router.push('/');
+    router.push('/').catch(() => {});
   },
 };
 </script>
